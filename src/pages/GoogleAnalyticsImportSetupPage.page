@@ -1,0 +1,53 @@
+<apex:page controller="GoogleAnalyticsSetupController">
+
+    <h1>Administrator setup page for Google Analytics login information:</h1>
+
+    <br/><br/>
+    <apex:form >
+        <apex:pageblock title="Site Metric Settings Information">
+			<apex:pageMessages />
+			
+            <apex:pageBlockSection >            
+            	<apex:inputField value="{! settings.Name}" id="thenamefield"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection >            
+                <apex:inputField value="{! settings.Email__c}"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection >            
+                <apex:inputField value="{! settings.Password__c}"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection >
+                <apex:inputField value="{! settings.Table_Id__c}"/>            
+            </apex:pageBlockSection>   
+            
+            <apex:pageBlockSection >
+                <apex:inputField value="{! settings.Visitors__c}"/>            
+            </apex:pageBlockSection>   
+
+            <apex:pageBlockSection >
+                <apex:inputField value="{! settings.Page_views_per_visit__c}"/>            
+            </apex:pageBlockSection>   
+
+            <apex:pageBlockSection >
+                <apex:inputField value="{! settings.Percent_new_visits__c}"/>            
+            </apex:pageBlockSection>   
+
+            <apex:pageBlockSection >
+                <apex:inputField value="{! settings.Visit_bounce_rate__c}"/>            
+            </apex:pageBlockSection>   
+
+            <apex:pageBlockSection >
+                <apex:inputField value="{! settings.Average_time_on_site__c}"/>            
+            </apex:pageBlockSection>   
+
+
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{! save}" value="Save!"/>
+            </apex:pageBlockButtons>
+ 
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

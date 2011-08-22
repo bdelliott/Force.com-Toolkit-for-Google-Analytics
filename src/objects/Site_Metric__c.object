@@ -137,18 +137,6 @@
         <unique>false</unique>
     </fields>
     <label>Site Metric</label>
-    <listViews>
-        <fullName>All</fullName>
-        <columns>NAME</columns>
-        <columns>Metric__c</columns>
-        <columns>Site_Metric_Date__c</columns>
-        <columns>Value__c</columns>
-        <columns>Display_Value__c</columns>
-        <columns>Time__c</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-        <language>en_US</language>
-    </listViews>
     <nameField>
         <label>Site Metric Name</label>
         <type>Text</type>

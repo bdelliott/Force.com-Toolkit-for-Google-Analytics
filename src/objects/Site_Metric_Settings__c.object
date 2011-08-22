@@ -6,6 +6,15 @@
     <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <fields>
+        <fullName>Average_time_on_site__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enables importing the &apos;Average time on site&apos; metric.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this to import the &apos;Average time on site&apos; metric.</inlineHelpText>
+        <label>Average time on site</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Email__c</fullName>
         <description>Email username for Google Analytics</description>
         <externalId>false</externalId>
@@ -14,6 +23,15 @@
         <required>true</required>
         <type>Email</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Page_views_per_visit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Import &apos;Page views per visit&apos; metric</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this to enable importing the &apos;Page views per visit&apos; metric.</inlineHelpText>
+        <label>Page views per visit</label>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Password__c</fullName>
@@ -27,6 +45,15 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Percent_new_visits__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Determines whether to import the &apos;Percent new visits&apos; metric.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this to enable importing the &apos;Percent new visits&apos; metric.</inlineHelpText>
+        <label>Percent new visits</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Table_Id__c</fullName>
         <description>Google Table Id for Site, ie. ga:123456</description>
         <externalId>false</externalId>
@@ -36,6 +63,24 @@
         <required>true</required>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Visit_bounce_rate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enables importing the &apos;Visit bounce rate&apos; metric.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this to enable importing the &apos;Visit bounce rate&apos; metric.</inlineHelpText>
+        <label>Visit bounce rate</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Visitors__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates whether the &apos;Visitors&apos; metric should be imported.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this box to import the &apos;Visitors&apos; metric.</inlineHelpText>
+        <label>Visitors</label>
+        <type>Checkbox</type>
     </fields>
     <label>Site Metric Settings</label>
 </CustomObject>
